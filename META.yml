@@ -1,0 +1,24 @@
+--- #YAML:1.0
+name:               DBIx-Class-Storage-DBI-mysql-backup
+version:            0.01
+abstract:           ~
+author:
+    - Atsushi Nagase <ngs@cpan.org>
+license:            perl
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    Test::mysqld:  0
+requires:
+    DBIx::Class:          0
+    DBIx::Class::Storage::DBI::mysql:  0
+    MySQL::Backup:        0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
