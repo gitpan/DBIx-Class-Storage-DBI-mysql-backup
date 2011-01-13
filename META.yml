@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               DBIx-Class-Storage-DBI-mysql-backup
-version:            0.01
+version:            0.02
 abstract:           ~
 author:
     - Atsushi Nagase <ngs@cpan.org>
