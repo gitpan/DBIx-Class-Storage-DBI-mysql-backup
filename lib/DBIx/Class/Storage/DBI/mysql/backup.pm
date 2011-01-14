@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 NAME
 
 DBIx::Class::Storage::DBI::mysql::backup
@@ -38,7 +40,7 @@ use File::Path qw/mkpath/;
 use Symbol;
 
 use vars qw( $VERSION );
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 sub import {
 
