@@ -40,15 +40,7 @@ use File::Path qw/mkpath/;
 use Symbol;
 
 use vars qw( $VERSION );
-$VERSION = '0.03';
-
-sub import {
-
-    *DBIx::Class::Storage::DBI::dump = \&_dump;
-    *DBIx::Class::Storage::DBI::backup = \&_backup;
-    *DBIx::Class::Storage::DBI::backup_filename = \&_backup_filename;
-
-}
+$VERSION = '0.04';
 
 
 =head2 backup ( $to_dir )
@@ -109,6 +101,10 @@ sub _dump {
     $mb->create_structure() . $mb->data_backup()
 }
 
+*DBIx::Class::Storage::DBI::dump = \&_dump;
+*DBIx::Class::Storage::DBI::backup = \&_backup;
+*DBIx::Class::Storage::DBI::backup_filename = \&_backup_filename;
+
 
 1;
 __END__
@@ -138,3 +134,4 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =cut
+
